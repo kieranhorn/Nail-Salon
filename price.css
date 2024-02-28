@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+height:150px;
+  font-family: 'Italiana', sans-serif;
+  
+}
+
+body {
+  font-family: 'Italiana', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none; 
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.price-list {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    padding-bottom: 2em;
+   
+  }
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+  }
+  
+  .service {
+    background-color: #D0C9C1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    height: 120px;
+}
+
+  
+  .service h3 {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #ab9f9f;
+    margin: 0;
+  }
+  
+
+@media screen and (max-width: 768px) {
+    header{
+      height:100px;
+      font-family: 'Italiana', sans-serif;
+      
+    }
+    
+    .menu-icon {
+      display: block; 
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      background-color: #f9f9f9;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+
+    .price-list {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+        
+        .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      
+}

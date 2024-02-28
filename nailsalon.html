@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Screen Loader</title>
+  <link rel="stylesheet" type="text/css" href="nailsalon.css">
+</head>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="your_logo_url" alt="Logo">
+    </div>
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="price.html">Prices</a></li>
+        <li><a href="nail.html#lction">Location</a></li>
+        <li><a href="https://appt.link/meet-with-kieran-horn">Appointment</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <h1 class="headertext">Beauty Begins with Beautiful Nails</h1>
+  <div class="btnn"><a href="https://appt.link/meet-with-kieran-horn"><button class="b1" >Appointment</button></a>
+  <a href="nail.html#lction"><button class="b2">Location</button></a></div>
+</header>
+
+<body>
+<div class="mid">
+<h1 class="nail">Nailed It, Every Visit</h1>
+<h4 class="midtext">Step into our world of luxury and relaxation. Our talented nail technicians are dedicated to pampering you with the finest nail services that leave your hands and feet looking and feeling their absolute best</h4>
+</div>
+
+<div class="image-container">
+  <img src="5.jpg" alt="Image 1" class="image">
+  <div class="middle-image">
+    <img src="2.png" alt="Image 2" class="image">
+   <a href="price.html"><button class="buttonn">Prices</button></a>
+  </div>
+  <img src="4.jpg" alt="Image 3" class="image">
+</div>
+
+<div class="location" >
+<h1 class="lct">Where To Find Us</h1>
+
+<section id="lction">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310847.3189211411!2d13.095102742081417!3d52.506386182212786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sde!2sde!4v1709128692283!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+    ></iframe>
+</div>
+</section>
+  <div class="loader">
+    <img src="123.png" alt="Loader Image">
+  </div>
+
+
+
+  <script src="screen.js"></script>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+  </body>
+  </html>
